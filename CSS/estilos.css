@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap');
+
+:root{
+    --padding-container: 100px 0;
+    --color-title:#6A5A3E;
+}
+
+body{
+    font-family: 'Comfortaa', cursive;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+    
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #6a5a3e;
+    
+}
+
+/* reveer esta parte, ya que carga la imagen pero observo que cuando achico se pierde la proporcion*/
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url(../Images/persona-sincerely-media-UmDfdonflT0-unsplash.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    z-index: -1;
+}
+
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex ;
+    align-items: center;
+}
+
+.nav__title{
+    font-weight: 300;
+    transition-property:inherit;
+    
+}
+
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__items{
+    list-style: none;
+}
+
+
+.nav__links{
+    color: rgb(52, 41, 30);
+    text-decoration: none;
+}
+
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none; /* ademas puse un logo de menu de izquierda
+     para no verlo hasta que estemos en dispositivos moviles */
+}
+
+.nav__image{
+    display: block;
+    width: 30px;
+}
+/*el icono de cerrar el menu cuando estamos en dispositivos mas peque;os aparezca, antes no*/
+.nav__close{ 
+    display: var(--show, none);
+} 
+
+/*Hero container */
+
+.hero__container{
+    max-width: 800px;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero__title{
+    font-size: 3rem;
+}
+
+.hero__paragraph{
+    margin-bottom: 20px;
+    background-color:#d0b585b6;
+}
+
+.cta{
+    display: inline-block;
+    background-color: #6a5a3e;
+    justify-self: center;
+    color: azure;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+/*About*/
+.about{
+    text-align: center;
+}
+
+.subtitle{
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.about__paragraph{
+    line-height: 1.7;
+}
+ 
+.about__main{
+    padding-top: 80px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+
+.about__icons{
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.about__icon{
+    width: 40px;
+} /* NO CAMBIA, SERA POR QUE PUSE UN ICONO PNG CON TAMANIO DEFINIDO? */
+
+.knowledge{
+    background-color: #D0B485;
+    background-image:  radial-gradient(#444cf7 0.75px, transparent 0.75px), radial-gradient(#444cf7 0.75px, #D0B485 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0,15px 15px;
+    overflow: hidden;
+}
+
+.knowledge__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.knowledge_picture{
+    max-width: 500px;
+}
+.knowledge__paragraph{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.knowledge__img {
+    width: 100%;
+    display: block;
+}
+
+/*agradecimientos / ver como hacer para que quede bien.. ponele*/
+
+.acknowledgment{
+    max-width:auto ;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: right;
+     gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
