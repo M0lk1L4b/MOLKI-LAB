@@ -168,7 +168,7 @@ body{
 
 .knowledge{
     background-color: #D0B485;
-    background-image:  radial-gradient(#6a5a3e  0.75px, transparent 0.75px), radial-gradient(#6a5a3e 0.75px, #D0B485 0.75px);
+    background-image:  radial-gradient(#b3935c   0.75px, transparent 0.75px), radial-gradient(#b3935c 0.75px, #D0B485 0.75px);
     background-size: 30px 30px;
     background-position: 0 0,15px 15px;
     overflow: hidden;
@@ -192,19 +192,6 @@ body{
 .knowledge__img {
     width: 100%;
     display: block;
-}
-
-/*agradecimientos / ver como hacer para que quede bien.. ponele*/
-
-.acknowledgment{
-    max-width:auto ;
-    --padding-container:0;
-    display: grid;
-    grid-auto-rows: max-content;
-    align-content: right;
-     gap: 1em;
-    padding-bottom: 100px;
-    text-align: center;
 }
 
 /*tipos de jabones*/
@@ -259,4 +246,82 @@ body{
 .tipos_jabones__arrow{
     width: 90%;
     cursor: pointer;
+}
+
+/*Questions*/
+.questions{
+    text-align: center;
+}
+
+.questions__container{
+    display: grid;
+    gap: 2em;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.questions__padding{
+    padding: 0;
+    transition: padding .3s;
+    border: 1px solid #D0B485;
+    border-radius: 6px;
+}
+
+.questions__padding--add{
+    padding-bottom: 30px;
+}
+
+.questions__answer{
+    padding:  0 30px 0;
+   overflow: hidden;
+}
+
+.questions__title{
+    display: flex;
+    font-size: 20px;
+    padding: 30px 0 30px;
+    cursor: pointer;
+    color: var(--color-title);
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+
+.questions__arrow{
+    border-radius: 50%;
+    background-color: var(--color-title);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-left: 10px;
+    transition: transform .3s;
+}
+
+.questions__arrow--rotate{
+    transform: rotate(180deg);
+}
+
+.questions__show{
+    text-align: left;
+    height: 0;
+    transition: 0,3s;
+}
+.questions__img{
+    display: block;
+}
+
+/*agradecimientos / ver como hacer para que quede bien.. ponele*/
+
+.acknowledgment{
+    max-width:auto ;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: right;
+     gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
 }
