@@ -57,8 +57,8 @@ body{
     transition-property:inherit;
     display: inline-block;
     margin: 0 0.5rem;
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 5s; /* don't forget to set a duration! */
+    animation: bounce;
+    animation-duration: 5s; 
 }
 
 .nav__link{
@@ -168,7 +168,7 @@ body{
 
 .knowledge{
     background-color: #D0B485;
-    background-image:  radial-gradient(#444cf7 0.75px, transparent 0.75px), radial-gradient(#444cf7 0.75px, #D0B485 0.75px);
+    background-image:  radial-gradient(#6a5a3e  0.75px, transparent 0.75px), radial-gradient(#6a5a3e 0.75px, #D0B485 0.75px);
     background-size: 30px 30px;
     background-position: 0 0,15px 15px;
     overflow: hidden;
@@ -205,4 +205,58 @@ body{
      gap: 1em;
     padding-bottom: 100px;
     text-align: center;
+}
+
+/*tipos de jabones*/
+.tipos_jabones{
+    background-color: #e7ddcd;
+}
+
+.tipos_jabones__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.tipos_jabones__body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.tipos_jabones__body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1,5s ease-in-out;
+}
+
+.tipos_jabones__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+.tipos_jabones__text{
+    max-width: 700px;
+} 
+
+.tipos_jabones__matpri{
+    background-color: #e7ddcd;
+    color: #6A5A3E;
+    display: inline-block;
+    padding: 5px;
+}
+
+.tipos_jabones__arrow{
+    width: 90%;
+    cursor: pointer;
 }
