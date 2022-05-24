@@ -222,7 +222,7 @@ body{
 .tipos_jabones__body--show{
     pointer-events: unset;
     opacity: 1;
-    transition: opacity 1,5s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 .tipos_jabones__img{
@@ -404,7 +404,14 @@ body{
     width: 30px;
 }
 
-
+.bandcamp{
+    display: flex;
+    gap: 1em;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    color: #fff;
+}
 .acknowledgment__container{
     display: inline-flex;
     gap: 1em;
@@ -413,4 +420,35 @@ body{
     padding-left: 10%;
     color: #fff;
 
+}
+
+/* Media queries o puntos de corte*/
+
+@media (max-width:800px){
+    .nav__menu{
+        display: block;
+    }
+
+    .nav__link--menu{
+        position: fixed;
+        background-color: #000;
+        top:0;
+        left:0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    }
+
+    .nav__links--show{
+        --show: block;
+        opacity:1 ;
+        pointer-events: unset;
+
+    }
 }
