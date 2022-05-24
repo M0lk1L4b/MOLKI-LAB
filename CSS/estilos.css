@@ -313,15 +313,104 @@ body{
     display: block;
 }
 
-/*agradecimientos / ver como hacer para que quede bien.. ponele*/
+.subtitle {
+    padding: 20px 10px ;
+}
+.questions__copy{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
 
-.acknowledgment{
-    max-width:auto ;
-    --padding-container:0;
+/*footer*/
+.footer{
+    background-color:  #6A5A3E;
+}
+
+.footer__title{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.footer__newsletter{
+    color: #fff;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 60px;
+}
+
+.nav--footer{
+    padding-bottom: 20px;
     display: grid;
-    grid-auto-rows: max-content;
-    align-content: right;
-     gap: 1em;
-    padding-bottom: 100px;
+    gap: 1em;
+    grid-auto-flow: row;
+    height: 100%;
+}
+
+.nav__link--footer{
+    display: flex;
+    margin: 0;
+    margin-right: 20px;
+    flex-wrap: wrap;
+
+}
+
+.footer__inputs{
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.footer__input{
+    background-color: #fff;
+    height: 50px;
+    display: block;
+    padding-left: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    margin-right: 16px;
+}
+
+.footer__submit{
+    margin-left: auto;
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.footer__copy{
+    --padding-container: 30px 0;
     text-align: center;
+    color: #fff;
+}
+
+.footer__icons{
+    
+    margin-bottom: 10px;
+}
+
+.footer__img{
+    width: 30px;
+}
+
+
+.acknowledgment__container{
+    display: inline-flex;
+    gap: 1em;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    color: #fff;
+
 }
