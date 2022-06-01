@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="/CSS/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <title>TPO-MolkiLab</title>
+    <script src="./JS/validacion.js"></script>
+    <title>TPO- Chantal Carballo</title>
 </head>
+
 <body>
     
     <header class="hero">
@@ -185,7 +187,29 @@
             </section>
 
         </section>
-
+        <section>
+            <h1 class="en_lang" id="contactForm">Contacto</h1>
+            <div class="container form-container">
+               <!-- <div class="contact_message animate__animated animate__fadeInTopRight animate__delay-2s">
+                    <p>Escribe un mensaje!</p>
+                </div>-->
+                <form id="form" action="" onsubmit="return contactForm();">
+                    <div class="form-control">
+                        <div id="error_message"></div>
+                        <input type="text" id="name" placeholder="Ingresa tu Nombre">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="email" placeholder="Ingresa tu Email">
+                    </div>
+                    <div class="form-control">
+                        <textarea id="message" placeholder="Escribe tu mensaje..." rows="5" name="message"></textarea>
+                    </div>
+                    <div class="form-control">
+                        <button type="submit" id="contact">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
  
