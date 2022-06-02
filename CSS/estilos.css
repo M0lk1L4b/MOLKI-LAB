@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap');
 
 :root{
-    --padding-container: 10px 0;
+    --padding-container: 20px 0;
     --color-title:#6A5A3E;
 }
 
@@ -166,9 +166,6 @@ body{
     margin: auto;
 }
 
-.about__icon{
-    width: 40px;
-} /* NO CAMBIA, SERA POR QUE PUSE UN ICONO PNG CON TAMANIO DEFINIDO? */
 
 .knowledge{
     background-color: #D0B485;
@@ -326,6 +323,10 @@ body{
     margin-bottom: 30px;
 }
 
+
+
+
+
 /*footer*/
 .footer{
     background-color:  #6A5A3E;
@@ -352,6 +353,7 @@ body{
     display: grid;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 1em;
 }
 
 .nav--footer{
@@ -371,7 +373,7 @@ body{
 }
 
 .footer__inputs{
-    margin-top: 10px;
+    margin-top: 1px;
     display: flex;
     overflow: hidden;
 }
@@ -415,17 +417,13 @@ body{
 .bandcamp{
     display: flex;
     gap: 1em;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 10%;
+    padding: 200px ;
     color: #fff;
 }
 .acknowledgment__container{
     display: flex;
     gap: 1em;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 10%;
+    padding: 5%;
     color: #fff;
 
 }
@@ -527,6 +525,8 @@ body{
         flex: 1;
     }
     .bandcamp{
+        padding: 10%;
+        width: 100%;
         flex-direction: column;
     }
 
