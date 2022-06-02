@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap');
 
 :root{
-    --padding-container: 100px 0;
+    --padding-container: 10px 0;
     --color-title:#6A5A3E;
 }
 
@@ -330,7 +330,10 @@ body{
 .footer{
     background-color:  #6A5A3E;
 }
-
+.form{
+    display: grid;
+    justify-content: space-evenly;
+}
 .footer__title{
     font-weight: 300;
     font-size: 2rem;
@@ -339,8 +342,10 @@ body{
    
 }
 
-.footer__newsletter{
+.footer__contact{
     color: #fff;
+    padding: 10px;
+
 }
 
 .footer__container{
@@ -374,9 +379,9 @@ body{
 .footer__input{
     background-color: #fff;
     height: 50px;
-    display: block;
-    padding-left: 10px;
-    border-radius: 6px;
+    display: justify;
+    padding: 10px;
+    border-radius: px;
     font-size: 1rem;
     outline: none;
     border: none;
@@ -387,7 +392,7 @@ body{
     margin-left: auto;
     display: inline-block;
     height: 50px;
-    padding: 0 20px;
+    padding: 0;
     font-size: 1rem;
     border-radius: 6px;
     cursor: pointer;
@@ -513,7 +518,7 @@ body{
         justify-content: space-evenly;
         margin: 0;
     }
-    .footer__form{ 
+    .footer__contact{ 
         width: 100%;
         justify-content: space-evenly;
     }

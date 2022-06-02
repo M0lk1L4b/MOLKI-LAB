@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="/CSS/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="./JS/validacion.js"></script>
+    <script src="./JS/slider.js"></script>
+    <script src="./JS/questions.js"></script>
+    <script src="./JS/menu.js"></script>
+    
     <title>TPO- Chantal Carballo</title>
 </head>
 
@@ -26,16 +30,17 @@
 
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items">
-                    <a href="#" class="nav__links">INICIO</a>
+                    <a name="inicio"></a>
+                    <a href="#inicio" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">CAMBIAR</a>
+                    <a href="#container-about" class="nav__links">¿Que aprenderás?</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">CONTACTO</a>
+                    <a href="#questions" class="nav__links">Preguntas frecuentes</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">CAMBIAR</a>
+                    <a href="#contacto" class="nav__links">Contacto</a>
                 </li>
                 
                 <img src="./Images/close.svg" alt="" class="nav__close">
@@ -52,12 +57,13 @@
         <section class="hero__container container">
             <h1 class="hero__title">Aprendé a hacer Jabones desde cero hasta dominarlo</h1>
             <p class="hero__paragraph">Elige aprender a hacer Jabones de una vez por todas, una vez que termines este curso serás capaz de crear distintos jabones.</p>
-            <a href="#" class="cta">Comienza ahora</a>
+            <a href="#contacto" class="cta">Comienza ahora</a>
 
         </section>
     </header>
     <main>
         <section class="container about">
+            <a name="container-about"></a>
             <h2 class="about__subtitle">¿Qué aprenderás en éste curso?</h2>
             <p class="about__paragraph">Todo lo necesario para comenzar a realizar tus jabones desde cero (El uso de distintos aceites, esencias, tipos de saponificación y más)</p>
 
@@ -87,7 +93,7 @@
                 <div class="knowledge__texts">
                     <h2 class="subtitle">Curso completo de jaboneria artesanal ¡Domina la técnica! </h2>
                     <p class="Knowledge__paragraph"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae id fugit, deleniti, fugiat quo est excepturi, dolore pariatur necessitatibus porro quod aliquam. Fugiat tempore, unde culpa cumque sunt in est .</p>
-                    <a href="#" class="cta">Entra al curso</a>
+                    <a href="#contacto" class="cta">Entra al curso</a>
                 </div>
 
                 <figure class="knowledge_picture">
@@ -135,6 +141,7 @@
         </section>
 
         <section class="questions container">
+            <a name="questions" ></a>
             <h2 class="subtitle">Preguntas frecuentes</h2>
             <p class="questions_paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt atque voluptas dolor possimus pariatur necessitatibus inventore illo commodi ad error odio minus soluta! Optio!</p>
             
@@ -183,72 +190,80 @@
             <section class="questions__offer">
                 <h2 class="subtitle">¿ Estás listx para aprender a hacer tus propios jabones?</h2>
                 <p class="questions__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos ratione culpa porro vel, deleniti iusto reprehenderit eum expedita aperiam inventore quibusdam perspiciatis. Velit perferendis quod aut eaque ipsum recusandae.</p>
-                <a href="#" class="cta">Aprendé ahora</a>
+                <a href="#contacto" class="cta">Aprendé ahora</a>
             </section>
 
         </section>
-        <section>
-            <h1 class="en_lang" id="contactForm">Contacto</h1>
-            <div class="container form-container">
-               <!-- <div class="contact_message animate__animated animate__fadeInTopRight animate__delay-2s">
-                    <p>Escribe un mensaje!</p>
-                </div>-->
-                <form id="form" action="" onsubmit="return contactForm();">
-                    <div class="form-control">
-                        <div id="error_message"></div>
-                        <input type="text" id="name" placeholder="Ingresa tu Nombre">
-                    </div>
-                    <div class="form-control">
-                        <input type="text" id="email" placeholder="Ingresa tu Email">
-                    </div>
-                    <div class="form-control">
-                        <textarea id="message" placeholder="Escribe tu mensaje..." rows="5" name="message"></textarea>
-                    </div>
-                    <div class="form-control">
-                        <button type="submit" id="contact">Enviar</button>
-                    </div>
-                </form>
-            </div>
-        </section>
+        
     </main>
 
- 
-    <footer class="footer">
-        <section class="footer__container container"> 
-            <nav class="nav nav--footer">
-                <h2 class="footer__title">Curso de Jabones artesanales</h2>
-
-                <ul class="nav__link nav__link--footer">
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">INICIO</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Cambiar Che!!</li>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">CONTACTO</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Che Cambiar</a>
-                    </li>
-                </ul>
-            </nav>
-<!--
+    <!--
             <form action="footer__form">
                 <h2 class="footer__newsletter">Suscribete a la Newsletter</h2>
-                <div class="footer__imputs">
+                <div class=>
                     <input type="email" placeholder="Email" class="footer__input">
                     <input type="submit" value="Registrate" class="footer__submit">
                 </div>
             </form>
         </section>
         -->
+ 
+    <footer class="footer">
+
+        <section class="form__container container">
+            <a name="contacto"></a>
+            <h2 class= "footer__contact">Contacto</h2>
+                <div class="container form__container">
+                    <form action="footer__form" onsubmit="return contactForm();">
+                        <div class="footer__imputs">
+                            <div id="error_message"></div>
+                            <input type="text" id="name" placeholder="Ingresa tu Nombre">
+                        </div>
+                        <div class="footer__imput">
+                            <input type="text" id="email" placeholder="Ingresa tu Email">
+                        </div>
+                        <div class="footer__imput">
+                            <textarea id="message" placeholder="Escribe tu mensaje..." rows="5" name="message"></textarea>
+                        </div>
+                        <div class=footer__submit>
+                            <button type="submit" id="contact">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+        </section>
+
+
+
+
+
+
+        
+        <section class="footer__container container"> 
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Curso de Jabones artesanales</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#inicio" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#container-about" class="nav__links">¿Que aprenderás?</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#questions" class="nav__links">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#contacto" class="nav__links">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
 
         <section class="footer__copy container">
             <div class="footer__social">
-                <a href="#" class="footer__icons" id=""><img src="./Images/facebook.svg" class="footer__img" alt=""></a>
-                <a href="#" class="footer__icons" id=""><img src="./Images/twitter.svg" class="footer__img" alt=""></a>
-                <a href="#" class="footer__icons" id=""><img src="./Images/youtube.svg" class="footer__img" alt=""></a>
+                <a href="https://www.facebook.com" class="footer__icons" id=""><img src="./Images/facebook.svg" class="footer__img" alt=""></a>
+                <a href="https://twitter.com" class="footer__icons" id=""><img src="./Images/twitter.svg" class="footer__img" alt=""></a>
+                <a href="https://www.youtube.com" class="footer__icons" id=""><img src="./Images/youtube.svg" class="footer__img" alt=""></a>
 
             </div>
             <h3 class="copyright">Derechos reservados &copy; Ch4n-b07</h3>
@@ -294,9 +309,7 @@
 
     </footer>
 
-    <script src="./JS/slider.js"></script>
-    <script src="./JS/questions.js"></script>
-    <script src="./JS/menu.js"></script>
+
 
 </body>
 
